@@ -2,7 +2,7 @@
   "name": "qq-mail-reader",
   "version": "0.1.0",
   "description": "Read and search a QQ mailbox safely through read-only IMAP tools.",
-  "author": {"name": "Local developer"},
+  "author": {"name": "oceanjustinlin"},
   "license": "MIT",
   "keywords": ["qq-mail", "imap", "email", "read-only", "search"],
   "skills": "./skills/",
@@ -11,7 +11,7 @@
     "displayName": "QQ 邮箱读取器",
     "shortDescription": "只读扫描和读取 QQ 邮箱邮件",
     "longDescription": "通过只读 IMAP 工具列出、搜索和读取 QQ 邮件，让 Agent 按用户要求提取和总结邮件内容。",
-    "developerName": "Local developer",
+    "developerName": "oceanjustinlin",
     "category": "Productivity",
     "capabilities": ["Read"],
     "defaultPrompt": [
