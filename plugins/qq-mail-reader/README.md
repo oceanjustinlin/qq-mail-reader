@@ -36,7 +36,7 @@ codex plugin marketplace add /absolute/path/to/qq-mail-reader
 codex plugin add qq-mail-reader@qq-mail-community
 ```
 
-仓库发布到 GitHub 后，也可用 `codex plugin marketplace add OWNER/REPO` 注册远程 marketplace，然后运行同一条 `codex plugin add` 命令。每位使用者都需在自己的电脑上配置邮箱地址与 IMAP 授权码。
+也可用 `codex plugin marketplace add oceanjustinlin/qq-mail-reader` 注册 GitHub 仓库，然后运行同一条 `codex plugin add` 命令。每位使用者都需在自己的电脑上配置邮箱地址与 IMAP 授权码。
 
 安装后打开新的 Codex 任务，让新工具与 skill 加载。未配置凭据时可先要求“检查 QQ 邮箱读取器是否已经配置，不要连接邮箱”；这只调用状态工具，不访问邮箱。
 
