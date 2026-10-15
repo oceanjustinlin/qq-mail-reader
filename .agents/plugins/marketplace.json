@@ -1,0 +1,20 @@
+{
+  "name": "qq-mail-community",
+  "interface": {
+    "displayName": "QQ Mail Reader"
+  },
+  "plugins": [
+    {
+      "name": "qq-mail-reader",
+      "source": {
+        "source": "local",
+        "path": "./plugins/qq-mail-reader"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

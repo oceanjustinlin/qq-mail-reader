@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "qqMailReader": {
+      "title": "QQ Mail Reader",
+      "description": "Read-only access to a locally configured QQ mailbox.",
+      "cwd": ".",
+      "command": "uv",
+      "args": ["run", "--project", ".", "--frozen", "qq-mail-reader-mcp"]
+    }
+  }
+}

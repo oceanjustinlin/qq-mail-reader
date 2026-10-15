@@ -1,0 +1,42 @@
+[project]
+name = "qq-mail-reader"
+version = "0.1.0"
+description = "Read-only QQ Mail MCP server for Codex"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "keyring>=25.6,<26",
+  "mcp>=2.0,<3",
+]
+
+[project.scripts]
+qq-mail-reader-mcp = "qq_mail_reader.server:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4,<9",
+  "pytest-cov>=6.2,<7",
+  "pyyaml>=6.0,<7",
+  "ruff>=0.13,<1",
+]
+
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qq_mail_reader"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "S105", "S106"]

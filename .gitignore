@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+__pycache__/
+*.pyc
+.env
+evaluations/p0/private/
+evaluations/p0/runs/
